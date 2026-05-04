@@ -205,3 +205,182 @@ const output = document.querySelector("#output")
 // }
 
 // console.log(newArray);
+// 25. Loop through an array [1, 3, 5, 7, 9] and count how many elements are greater than 4.
+
+// const array = [1, 3, 5, 7, 9];
+
+// let count = [];
+
+// for(let i=0; i<array.length; i++){
+//     if(array[i] > 4){
+//         count++;
+//     }
+        
+// }
+// console.log(count);
+
+// Given an array [10, 15, 20, 25, 30], use a loop to add only the numbers divisible by 5.
+
+// const  array = [10, 15, 20, 25, 30];
+
+// let newArray=[];
+
+// for(let i=0; i<array.length; i++){
+//     if( array[i] % 5 === 0){
+//         newArray.push(array[i])
+//     }
+
+// }
+// console.log(newArray);
+
+// let sum = 0;
+// for (let i=0; i <array.length; i++){
+//     sum+= array[i]
+// }
+// console.log(sum);
+
+// 27. Write a loop that checks if a number 25 exists in the array [10, 20, 30, 40, 25].
+
+// const array = [10, 20, 30, 40, 25];
+// let found = false;
+
+// for(let i=0; i<array.length; i++){
+//     if( array[i] === 25){
+//         found = true;
+//         break;
+//     }
+        
+        
+// }
+// console.log(found);
+// 28. Given two arrays [1, 2, 3] and [4, 5, 6], use a loop to create a third array containing the
+// sum of corresponding elements.
+
+// const array1 = [1,2,3];
+// const array2 = [4,5,6];
+
+// let result = [ ];
+
+// for(let i=0; i<array1.length; i++){
+//     result.push(array1[i]+array2[i])
+// }
+// console.log(result);
+
+
+// 29. Use a loop to find the second-largest number in an array [10, 99, 23, 87, 56].
+
+// 30. Given an array [1, 2, 3, 4, 5], reverse the array manually using a loop (don’t use
+// .reverse()).
+
+// const array = [1, 2, 3, 4, 5];
+
+// let newArray = []
+// for(let i=array.length -1; i>=0; i--){
+// newArray.push(array[i])
+    
+// }
+// console.log(newArray);
+
+// 31. Write a loop that finds and prints all the prime numbers between 1 and 50.
+
+// for(let n = 2 ; n <= 50 ; n++){
+//     let primeNumber = true;
+
+//     for( let i =2 ; i< n ; i++){
+//         if( n % i === 0){
+//             primeNumber=false
+//             break;
+//         }
+//     }
+//     if(primeNumber){
+//         console.log(n);
+        
+//     }
+
+// }
+// 33. Given an array [0, -1, -5, 6, 8, -3], count how many negative numbers are in the array.
+
+// const array=[0, -1, -5, 6, 8, -3]
+// let count =[];
+// for(let i =0; i<array.length; i++){
+//     if(array[i] < 0)
+//         count++;
+// }
+// // console.log(count);
+// 35. Use a loop to remove all zeroes from an array [0, 1, 0, 3, 0, 5] and store the non-zero
+// elements in a new array.
+
+// const array = [0, 1, 0, 3, 0, 5];
+ 
+// let newArray = [];
+
+// for(let i=0; i <array.length; i++){
+//     if(array[i] !== 0){
+//         newArray.push(array[i])
+//     }
+// }
+// // console.log(newArray);
+// // 37. Write a loop that checks whether all numbers in an array [2, 4, 6, 8] are even.
+// const array = [2, 4, 6, 8];
+// let even = true;
+
+// for(let i=0; i<array.length; i++){
+//     if(array[i] % 2 !== 0){
+//         even = false
+//         break
+//     }
+// }
+// console.log(even);
+
+// 38. Create a loop that counts how many numbers in [5, 10, 15, 20, 25] are greater than or
+// equal to the average of the array.
+
+// const number = [5, 10, 15, 20, 25];
+
+// let sum = 0;
+// let average = 0;
+// let count = 0;
+
+// for(let i = 0; i <number.length; i++){
+//     sum += number[i]
+
+// }
+// average = sum/ number.length
+
+// for(let i=0 ; i<number.length; i++){
+//     if(number[i] >= average){
+//         count ++;
+//     }
+// }
+// console.log(average);
+
+// console.log(count);
+
+
+
+
+
+// 39. Given an array [2, 2, 2, 2, 2], use a loop to check whether all elements are equal.
+
+// const array = [2, 9, 2, 2, 2];
+// let result = true;
+// for(let i=0; i<array.length; i++){
+//     if(array[i] !== array[0]){
+//         result=false;
+//         break;
+//     }
+// }
+// console.log(result);
+
+// // 21. Create a loop that finds the largest number in an array [45, 67, 12, 89, 34].
+
+// const array = [45, 67, 12, 89, 34]
+
+// let result = array[0];
+// for ( let i =0; i<array.length; i++ ){
+//     if( array[i] > result){
+//         result= array[i]
+//     }
+        
+// }
+// console.log(result);
