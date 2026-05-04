@@ -164,3 +164,44 @@ const output = document.querySelector("#output")
 //         console.log(i);
         
 // }
+
+// Use a loop to count how many numbers in an array [3, 8, 6, 1, 9, 2] are even.
+
+// const array =[3, 8, 6, 1, 9, 2]
+
+// let number = " ";
+
+// for(let i =0; i < array.length; i++){
+//     if( array[i] % 2 === 0){
+//         number ++;
+//     }
+
+// }
+// console.log(number);
+
+
+// 23. Write a loop that calculates the average of numbers in an array [20, 30, 40, 50].
+
+// const array =[20, 30, 40, 50]
+
+// let sum = 0;
+// let average = 0;
+
+// for(let i =0; i < array.length; i++){
+//     sum = sum + array[i]
+//     average = sum / array.length
+    
+    
+// }
+// console.log(average);
+
+// 24. Given an array [2, 4, 6, 8, 10], use a loop to create a new array where each value is
+// multiplied by 3.
+
+// const array = [2, 4, 6, 8, 10];
+// let newArray = [];
+// for( let i = 0; i<array.length; i++){
+//     newArray.push(array[i]*3)
+// }
+
+// console.log(newArray);
