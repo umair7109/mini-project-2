@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+h1 {
+  font-size: 70px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+  margin: 40px 0;
+  font-family: Arial, sans-serif;
+
+  /* Gradient text */
+  background: linear-gradient(135deg, #ff6b6b, #ff9f43, #6c5ce7, #00cec9);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Shadow */
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+  /* Animation */
+  animation: gradientMove 6s ease infinite,
+             floatText 3s ease-in-out infinite;
+
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  width: 180px;
+  height: 6px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #ff6b6b, #6c5ce7);
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
+  box-shadow: 0 5px 20px rgba(108, 92, 231, 0.4);
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes floatText {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+body {
+  background: #f4f6f9;
+  padding: 20px;
+}
+
+/* Buttons container */
+.divbtn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Category buttons */
+.divbtn button {
+  padding: 10px 15px;
+  border: none;
+  background: #2d6cdf;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.divbtn button:hover {
+  background: #1b4fb3;
+  transform: scale(1.05);
+}
+
+/* Products container */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Product card */
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Title */
+.card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Text */
+.card p {
+  margin: 5px 0;
+  color: #666;
+}
+
+/* Price highlight */
+.price {
+  color: #2d6cdf;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Button */
+.card button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #28a745;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background: #1f7a33;
+}</style>
+</head>
+<body>
+    <h1> Mini project</h1>
+
+    <div class="divbtn"></div>
+    <div class="container"></div>
+    <script src="./app.js"></script>
+</body>
+</html>
