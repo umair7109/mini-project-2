@@ -90,10 +90,14 @@ const products = [
     { id: 70, name: "TV Stand", category: "Furniture", price: 160, stock: 9 },
 ];
 
-
+const chekoutbtn = document.querySelector(".checkout")
 const container = document.querySelector(".container")
 const   btnDiv = document.querySelector(".divbtn")
 const categoryArr = ["All"];
+const getcartItems=JSON.parse(localStorage.getItem("cartItem"));
+
+const cartItem = getcartItems
+
 
 const renderItem = (arr) => {
   container.innerHTML = "";
@@ -179,12 +183,14 @@ function addtocart(id){
 }
 
 
+chekoutbtn.addEventListener("click", ()=>{
+  localStorage.setItem("cartitem", JSON.stringify(cartItem))
+  window.location = "cart.html"
+})
 
 
 
 
-
-addtocart()
 
 
 
